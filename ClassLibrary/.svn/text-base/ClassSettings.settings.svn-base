@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Class_Library" GeneratedClassName="ClassSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\Data</Value>
+    </Setting>
+    <Setting Name="ImageDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\Data\Images</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

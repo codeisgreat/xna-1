@@ -1,0 +1,116 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.Collections;
+
+namespace Main_XNA_Game.GUI.SA
+{
+    public partial class frmHome : Form
+    {
+        RegList myRegList = new RegList();
+        UserList myUserList = new UserList();
+        XMLHelper<RegList> myRegXML = new XMLHelper<RegList>("Data");
+        XMLHelper<UserList> myUserXML = new XMLHelper<UserList>("Data");
+
+        public frmHome()
+        {
+            InitializeComponent();
+            lblNoRegUsers.Visible = false;
+        }
+        
+        private void btnApprove_Click(object sender, EventArgs e)
+        {
+            RefreshListOfApprovedUsers();
+        }
+
+        private void btnConfirmApproved_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                myUserXML.Load(ref myUserList);
+                bool NoneSelected = true;
+                for (int i = 0; i < cblRegRequests.Items.Count; i++)
+                {
+                    if (cblRegRequests.GetItemChecked(i))
+                    {
+                        myRegList.myUsers[i].IsApproved = true;
+                        myUserList.AddItem(myRegList.myUsers[i]);
+                        myRegList.RemoveItem(i);
+                        NoneSelected = false;
+                    }
+                }
+                myRegXML.Save(myRegList);
+                myUserXML.Save(myUserList);
+                if (!NoneSelected)
+                {
+                    MessageBox.Show("Selected User's Confirmed. They can now Login into the System");
+                    RefreshListOfApprovedUsers();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(Helper.GetError(ex));
+            }
+
+         }
+
+        private void btnConfirmReject_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                bool NoneSelected = true;
+                int RegLength = cblRegRequests.Items.Count;
+
+                for (int i = 0; i < RegLength; i++)
+                {
+                    if (cblRegRequests.GetItemChecked(i))
+                    {
+                        myRegList.myUsers[i].IsApproved = false;
+                        NoneSelected = false;
+                    }
+                }
+                
+                myRegXML.Save(myRegList);
+                if (!NoneSelected)
+                {
+                    MessageBox.Show("Selected User's Removed. ");
+                    RefreshListOfApprovedUsers();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(Helper.GetError(ex));                
+            }
+
+        }
+
+        public void RefreshListOfApprovedUsers()
+        {
+            cblRegRequests.Items.Clear();
+            myRegXML.Load(ref myRegList);
+            for (int i = 0; i < myRegList.myUsers.Length; i++)
+            {
+                cblRegRequests.Items.Add(myRegList.myUsers[i].GetName(), false);
+            }
+            if (myRegList.myUsers.Length == 0)
+            {
+                lblNoRegUsers.Visible = true;
+                cblRegRequests.Enabled = false;
+            }
+            else
+            {
+                lblNoRegUsers.Visible = false;
+                cblRegRequests.Enabled = true;
+            }
+                
+        }
+
+
+    }
+}

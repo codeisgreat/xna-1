@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>background.jpg</Source>
+      <Name>background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2009-04-13T02:19:26-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Backyard.jpg</Source>
+      <Name>Backyard</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\Backyard.xnb</Output>
+      <Time>2009-04-11T13:23:26-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Ball.png</Source>
+      <Name>Ball</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\Ball.xnb</Output>
+      <Time>2009-04-11T14:10:06-04:00</Time>
+    </Item>
+    <Item>
+      <Source>blank.png</Source>
+      <Name>blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\blank.xnb</Output>
+      <Time>2008-10-22T14:21:42-04:00</Time>
+    </Item>
+    <Item>
+      <Source>gradient.png</Source>
+      <Name>gradient</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\gradient.xnb</Output>
+      <Time>2008-10-22T14:21:42-04:00</Time>
+    </Item>
+    <Item>
+      <Source>LeftPaddle.png</Source>
+      <Name>LeftPaddle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\LeftPaddle.xnb</Output>
+      <Time>2009-04-11T14:13:08-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Obstacle.jpg</Source>
+      <Name>Obstacle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\Obstacle.xnb</Output>
+      <Time>2009-04-29T14:36:50-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PongTableTop.png</Source>
+      <Name>PongTableTop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\PongTableTop.xnb</Output>
+      <Time>2009-04-09T15:38:58-04:00</Time>
+    </Item>
+    <Item>
+      <Source>RightPaddle.png</Source>
+      <Name>RightPaddle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\RightPaddle.xnb</Output>
+      <Time>2009-04-11T14:12:56-04:00</Time>
+    </Item>
+    <Item>
+      <Source>gamefont.spritefont</Source>
+      <Name>gamefont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\gamefont.xnb</Output>
+      <Time>2008-10-22T14:21:42-04:00</Time>
+    </Item>
+    <Item>
+      <Source>menufont.spritefont</Source>
+      <Name>menufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\menufont.xnb</Output>
+      <Time>2008-10-22T14:21:42-04:00</Time>
+    </Item>
+    <Item>
+      <Source>myFont.spritefont</Source>
+      <Name>myFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\myFont.xnb</Output>
+      <Time>2009-04-29T01:03:24-04:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\BallLost.wav</Source>
+      <Name>wav\BallLost</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\BallLost.xnb</Output>
+      <Time>1998-12-20T10:46:32-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\drop2.wav</Source>
+      <Name>wav\drop2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\drop2.xnb</Output>
+      <Time>1998-12-20T10:46:32-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\GameLoop.wav</Source>
+      <Name>wav\GameLoop</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\GameLoop.xnb</Output>
+      <Time>2008-01-07T15:26:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\GameOver.wav</Source>
+      <Name>wav\GameOver</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\GameOver.xnb</Output>
+      <Time>2008-01-07T15:26:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\HitBorder.wav</Source>
+      <Name>wav\HitBorder</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\HitBorder.xnb</Output>
+      <Time>1998-12-20T10:41:38-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\HitObs.wav</Source>
+      <Name>wav\HitObs</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\HitObs.xnb</Output>
+      <Time>2009-05-06T20:33:22-04:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\HitPaddle.wav</Source>
+      <Name>wav\HitPaddle</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\HitPaddle.xnb</Output>
+      <Time>1998-12-20T10:47:38-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\Music_Intro.WAV</Source>
+      <Name>wav\Music_Intro</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\Music_Intro.xnb</Output>
+      <Time>2008-01-07T15:26:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\navigate_1.wav</Source>
+      <Name>wav\navigate_1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\navigate_1.xnb</Output>
+      <Time>2008-01-07T15:26:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\start_1.wav</Source>
+      <Name>wav\start_1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\start_1.xnb</Output>
+      <Time>2008-01-07T15:26:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\start_3.wav</Source>
+      <Name>wav\start_3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\start_3.xnb</Output>
+      <Time>2008-01-07T15:26:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>wav\Title.wav</Source>
+      <Name>wav\Title</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\wav\Title.xnb</Output>
+      <Time>2009-05-06T21:03:58-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Documents and Settings\Kanhar\Desktop\Main1.5\Pong_Component\Pong_Component\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2008-10-10T17:42:32-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2008-10-10T17:43:28-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2008-10-10T17:43:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2008-10-10T17:48:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2008-10-10T17:48:50-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.0.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2009-03-20T13:40:41.78125-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

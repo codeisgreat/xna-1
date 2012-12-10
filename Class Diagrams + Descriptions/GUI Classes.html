@@ -1,0 +1,141 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>UML Model</title><link rel="stylesheet" href="xmi.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.67.2"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="article" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="id2705128"></a>UML Model</h2></div><div><h2 class="title"><a name="id2705128"></a>UML Model</h2></div><div><h2 class="title"><a name="id2705128"></a>UML Model</h2></div><div><h2 class="title"><a name="id2705128"></a>UML Model</h2></div><div><h2 class="title"><a name="id2705128"></a>UML Model</h2></div><div><h2 class="title"><a name="id2705128"></a>UML Model</h2></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="#actors">Actors</a></span></dt><dt><span class="section"><a href="#usecases">Use Cases</a></span></dt><dt><span class="section"><a href="#interfaces">Interfaces</a></span></dt><dt><span class="section"><a href="#classes">Classes</a></span></dt><dd><dl><dt><span class="section"><a href="#id2744639">MainGUI</a></span></dt><dt><span class="section"><a href="#id2745067">RegisterModel</a></span></dt><dt><span class="section"><a href="#id2745617">LoadSaved</a></span></dt><dt><span class="section"><a href="#id2752692">NewGame</a></span></dt><dt><span class="section"><a href="#id2753205">ManageAccount</a></span></dt><dt><span class="section"><a href="#id2753743">ManageGamer</a></span></dt><dt><span class="section"><a href="#id2754215">Gamer</a></span></dt><dt><span class="section"><a href="#id2754309">ManageAdmin</a></span></dt><dt><span class="section"><a href="#id2754988">PausedModel</a></span></dt></dl></dd><dt><span class="section"><a href="#diagrams">Diagrams</a></span></dt><dd><dl><dt><span class="section"><a href="#id2755426">class diagram</a></span></dt><dt><span class="section"><a href="#id2755452">Classes:</a></span></dt></dl></dd></dl></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="actors"></a>Actors</h2></div></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="usecases"></a>Use Cases</h2></div></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="interfaces"></a>Interfaces</h2></div></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="classes"></a>Classes</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2744639"></a>MainGUI</h3></div></div></div><div class="table"><a name="id2744646"></a><p class="title"><b>Table 1. </b></p><table summary="" border="1"><colgroup><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th class="class-title" align="left">Class</th><th class="class-name" colspan="2" align="left">MainGUI</th></tr></thead><tbody><tr><td class="comment" colspan="3" align="left">
+                <p>Represents the model behind the main screen.</p>
+              </td></tr><tr><td class="info-title" colspan="3" align="left">
+                <p>Operations:</p>
+              </td></tr><tr><td class="feature-heading" align="left">
+                <p>visibility</p>
+              </td><td class="feature-heading" align="left">
+                <p>return</p>
+              </td><td class="feature-heading" align="left">
+                <p>name</p>
+              </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">register</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Displays the registration window.</td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">load_game</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Displays the game load window.</td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">new_game</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Displays the new game window. Requires two gamers to login to play a new game.</td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">manage</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Displays the management window. Requires a user login.</td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2745067"></a>RegisterModel</h3></div></div></div><div class="table"><a name="id2745074"></a><p class="title"><b>Table 2. </b></p><table summary="" border="1"><colgroup><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th class="class-title" align="left">Class</th><th class="class-name" colspan="2" align="left">RegisterModel</th></tr></thead><tbody><tr><td class="comment" colspan="3" align="left">
+                <p>Describes the model behind the register window, through which a new user can register to be a gamer.</p>
+              </td></tr><tr><td class="info-title" colspan="3" align="left">Attributes:</td></tr><tr><td class="feature-heading" align="left">visibility</td><td class="feature-heading" align="left">type</td><td class="feature-heading" align="left">name</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">first_name</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Receives the user's first name.</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">last_name</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Receives the user's last name.</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">username_requested</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Receives the username requested by the registering user.</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">password</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Receives the user's password.</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">email</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Receives the user's email.</td></tr><tr><td class="info-title" colspan="3" align="left">
+                <p>Operations:</p>
+              </td></tr><tr><td class="feature-heading" align="left">
+                <p>visibility</p>
+              </td><td class="feature-heading" align="left">
+                <p>return</p>
+              </td><td class="feature-heading" align="left">
+                <p>name</p>
+              </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">send_registration_request</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">cancel_registration</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2745617"></a>LoadSaved</h3></div></div></div><div class="table"><a name="id2745624"></a><p class="title"><b>Table 3. </b></p><table summary="" border="1"><colgroup><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th class="class-title" align="left">Class</th><th class="class-name" colspan="2" align="left">LoadSaved</th></tr></thead><tbody><tr><td class="comment" colspan="3" align="left">
+                <p>Describes the model behind the load window which loads a saved game.</p>
+              </td></tr><tr><td class="info-title" colspan="3" align="left">Attributes:</td></tr><tr><td class="feature-heading" align="left">visibility</td><td class="feature-heading" align="left">type</td><td class="feature-heading" align="left">name</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">p1_password</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">First player's password.</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">p2_password</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Second player's password.</td></tr><tr><td class="info-title" colspan="3" align="left">
+                <p>Operations:</p>
+              </td></tr><tr><td class="feature-heading" align="left">
+                <p>visibility</p>
+              </td><td class="feature-heading" align="left">
+                <p>return</p>
+              </td><td class="feature-heading" align="left">
+                <p>name</p>
+              </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">get_saved_list</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Retrieves and displays the list of saved games</td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">load_game</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Loads a saved game.</td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2752692"></a>NewGame</h3></div></div></div><div class="table"><a name="id2752698"></a><p class="title"><b>Table 4. </b></p><table summary="" border="1"><colgroup><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th class="class-title" align="left">Class</th><th class="class-name" colspan="2" align="left">NewGame</th></tr></thead><tbody><tr><td class="comment" colspan="3" align="left">
+                <p>Describes the model behind the new game window. Requires both players to login</p>
+              </td></tr><tr><td class="info-title" colspan="3" align="left">Attributes:</td></tr><tr><td class="feature-heading" align="left">visibility</td><td class="feature-heading" align="left">type</td><td class="feature-heading" align="left">name</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">p1_username</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">The username entered by first player.</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">p1_password</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left">Password entered by player one</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">p2_username</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">p2_password</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="info-title" colspan="3" align="left">
+                <p>Operations:</p>
+              </td></tr><tr><td class="feature-heading" align="left">
+                <p>visibility</p>
+              </td><td class="feature-heading" align="left">
+                <p>return</p>
+              </td><td class="feature-heading" align="left">
+                <p>name</p>
+              </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">get_users</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">new_game</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2753205"></a>ManageAccount</h3></div></div></div><div class="table"><a name="id2753212"></a><p class="title"><b>Table 5. </b></p><table summary="" border="1"><colgroup><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th class="class-title" align="left">Class</th><th class="class-name" colspan="2" align="left">ManageAccount</th></tr></thead><tbody><tr><td class="comment" colspan="3" align="left">
+                <p>Represents the model behind the management login screen.</p>
+              </td></tr><tr><td class="info-title" colspan="3" align="left">Attributes:</td></tr><tr><td class="feature-heading" align="left">visibility</td><td class="feature-heading" align="left">type</td><td class="feature-heading" align="left">name</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">username</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">password</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="info-title" colspan="3" align="left">
+                <p>Operations:</p>
+              </td></tr><tr><td class="feature-heading" align="left">
+                <p>visibility</p>
+              </td><td class="feature-heading" align="left">
+                <p>return</p>
+              </td><td class="feature-heading" align="left">
+                <p>name</p>
+              </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">get_user</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">get_user_type</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">gamer_manage</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">admin_manage</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2753743"></a>ManageGamer</h3></div></div></div><div class="table"><a name="id2753749"></a><p class="title"><b>Table 6. </b></p><table summary="" border="1"><colgroup><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th class="class-title" align="left">Class</th><th class="class-name" colspan="2" align="left">ManageGamer</th></tr></thead><tbody><tr><td class="comment" colspan="3" align="left">
+                <p>Represents the model that allows a gamer to manager his/her own accoount. (This model may be shared between more than one window.)</p>
+              </td></tr><tr><td class="info-title" colspan="3" align="left">Attributes:</td></tr><tr><td class="feature-heading" align="left">visibility</td><td class="feature-heading" align="left">type</td><td class="feature-heading" align="left">name</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">user</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="info-title" colspan="3" align="left">
+                <p>Operations:</p>
+              </td></tr><tr><td class="feature-heading" align="left">
+                <p>visibility</p>
+              </td><td class="feature-heading" align="left">
+                <p>return</p>
+              </td><td class="feature-heading" align="left">
+                <p>name</p>
+              </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">change_email</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">change_password</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">pay_bills</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">view_stats</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2754215"></a>Gamer</h3></div></div></div><div class="table"><a name="id2754222"></a><p class="title"><b>Table 7. </b></p><table summary="" border="1"><colgroup><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th class="class-title" align="left">Class</th><th class="class-name" colspan="2" align="left">Gamer</th></tr></thead><tbody><tr><td colspan="3" align="left">
+                <p></p>
+              </td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2754309"></a>ManageAdmin</h3></div></div></div><div class="table"><a name="id2754316"></a><p class="title"><b>Table 8. </b></p><table summary="" border="1"><colgroup><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th class="class-title" align="left">Class</th><th class="class-name" colspan="2" align="left">ManageAdmin</th></tr></thead><tbody><tr><td class="comment" colspan="3" align="left">
+                <p>Represents the model that allows the administrator to manage the overall system. (May be shared between more than one window.)</p>
+              </td></tr><tr><td class="info-title" colspan="3" align="left">Attributes:</td></tr><tr><td class="feature-heading" align="left">visibility</td><td class="feature-heading" align="left">type</td><td class="feature-heading" align="left">name</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">user</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="info-title" colspan="3" align="left">
+                <p>Operations:</p>
+              </td></tr><tr><td class="feature-heading" align="left">
+                <p>visibility</p>
+              </td><td class="feature-heading" align="left">
+                <p>return</p>
+              </td><td class="feature-heading" align="left">
+                <p>name</p>
+              </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">enable_user</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">disable_user</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">approve_request</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">get_registration_requests</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">get_stats</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">change_password</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">change_email</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">deny_request</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr></tbody></table></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2754988"></a>PausedModel</h3></div></div></div><div class="table"><a name="id2754994"></a><p class="title"><b>Table 9. </b></p><table summary="" border="1"><colgroup><col align="left"><col align="left"><col align="left"></colgroup><thead><tr><th class="class-title" align="left">Class</th><th class="class-name" colspan="2" align="left">PausedModel</th></tr></thead><tbody><tr><td class="comment" colspan="3" align="left">
+                <p>Represents the model behind the paused window.</p>
+              </td></tr><tr><td class="info-title" colspan="3" align="left">Attributes:</td></tr><tr><td class="feature-heading" align="left">visibility</td><td class="feature-heading" align="left">type</td><td class="feature-heading" align="left">name</td></tr><tr><td class="feature-detail" align="left">private</td><td class="feature-detail" align="left"> </td><td class="feature-detail" align="left">paused_by</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="info-title" colspan="3" align="left">
+                <p>Operations:</p>
+              </td></tr><tr><td class="feature-heading" align="left">
+                <p>visibility</p>
+              </td><td class="feature-heading" align="left">
+                <p>return</p>
+              </td><td class="feature-heading" align="left">
+                <p>name</p>
+              </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">resume</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">concede</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr><tr><td class="feature-detail" align="left">public</td><td class="feature-detail" align="left">
+                <p class="datatype">void</p>
+              </td><td class="feature-detail" align="left">save_game</td></tr><tr><td class="comment" align="left"> </td><td class="comment" colspan="2" align="left"> </td></tr></tbody></table></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="diagrams"></a>Diagrams</h2></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2755426"></a>class diagram</h3></div></div></div><p></p><div class="mediaobject"><img src="class%20diagram.png"></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id2755452"></a>Classes:</h3></div></div></div><p></p></div></div></div></body></html>

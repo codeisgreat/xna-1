@@ -1,0 +1,72 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Main_XNA_Game
+{
+    public partial class frmLogin : Form
+    {
+        UserList myUserList = new UserList();
+        XMLHelper<UserList> myUserXML = new XMLHelper<UserList>("Data");   
+        User UserOne;
+
+        GUI.PR.frmHome myPRHome = null;
+        GUI.SA.frmHome mySAHome = null;
+
+        public frmLogin()
+        {
+            InitializeComponent();            
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            String Username = txtFirstUser.Text;
+            String Password = txtFirstPassword.Text;
+            if (Username.ToUpper().Equals("SA") && Password.ToUpper().Equals("SA"))
+            {
+               mySAHome= new Main_XNA_Game.GUI.SA.frmHome();
+               mySAHome.Visible = true;
+            }
+            else
+            {
+                //Verify Username and Password from UserList
+                myUserXML.Load(ref myUserList);
+                Boolean UserFound = false;
+                
+                for (int i = 0; i < myUserList.myUsers.Length; i++)
+                {
+                    if (myUserList.myUsers[i].UserName.ToUpper().Equals(Username.ToUpper()) && myUserList.myUsers[i].Password.ToUpper().Equals(Password.ToUpper()))
+                    {
+                        UserFound = true;
+                        UserOne = myUserList.myUsers[i];
+                        myPRHome = new Main_XNA_Game.GUI.PR.frmHome();
+                        myPRHome.Visible = true;
+                        break;
+                    }
+                }
+                if (!UserFound)
+                    MessageBox.Show("Login Unsuccessful");
+                
+                    
+
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            frmRegister myRegister = new frmRegister();
+            myRegister.Show();
+            this.Dispose();
+        }
+    }
+}

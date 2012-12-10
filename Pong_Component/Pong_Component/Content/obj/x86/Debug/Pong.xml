@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <WaveBank Name="Pong">Wave Bank
+{
+    Name = Pong;
+    Xbox File = Xbox\Pong.xwb;
+    Windows File = Win\Pong.xwb;
+    Xbox Bank Path Edited = 1;
+    Windows Bank Path Edited = 1;
+    Seek Tables = 1;
+    Compression Preset Name = Compression Preset;
+    Xbox Bank Last Modified Low = 0;
+    Xbox Bank Last Modified High = 0;
+    PC Bank Last Modified Low = 0;
+    PC Bank Last Modified High = 0;
+    Header Last Modified Low = 0;
+    Header Last Modified High = 0;
+    Bank Last Revised Low = 0;
+    Bank Last Revised High = 0;
+
+    Wave
+    {
+        Name = start_3;
+        File = wav\start_3.wav;
+        Build Settings Last Modified Low = 3136428964;
+        Build Settings Last Modified High = 29838083;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 50568;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 500313856;
+            Last Modified High = 29810889;
+        }
+    }
+
+    Wave
+    {
+        Name = BallLost;
+        File = wav\BallLost.wav;
+        Build Settings Last Modified Low = 3136428964;
+        Build Settings Last Modified High = 29838083;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 50140;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 780313856;
+            Last Modified High = 29810889;
+        }
+    }
+
+    Wave
+    {
+        Name = drop2;
+        File = wav\drop2.wav;
+        Build Settings Last Modified Low = 3136428964;
+        Build Settings Last Modified High = 29838083;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 77028;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 720313856;
+            Last Modified High = 29810889;
+        }
+    }
+
+    Wave
+    {
+        Name = HitPaddle;
+        File = wav\HitPaddle.wav;
+        Build Settings Last Modified Low = 3136428964;
+        Build Settings Last Modified High = 29838083;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 50804;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 640313856;
+            Last Modified High = 29810889;
+        }
+    }
+
+    Wave
+    {
+        Name = HitObs;
+        File = wav\HitObs.wav;
+        Build Settings Last Modified Low = 3136428964;
+        Build Settings Last Modified High = 29838083;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 75500;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 920313856;
+            Last Modified High = 29810889;
+        }
+    }
+
+    Wave
+    {
+        Name = Music_Intro;
+        File = wav\Title.wav;
+        Build Settings Last Modified Low = 2185963150;
+        Build Settings Last Modified High = 29838086;
+        Comment = Music by Scott Selfon;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 46;
+            Play Region Length = 1357312;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 758377996;
+            Last Modified High = 29838086;
+        }
+    }
+
+    Wave
+    {
+        Name = HitBorder;
+        File = wav\HitBorder.wav;
+        Build Settings Last Modified Low = 3136428964;
+        Build Settings Last Modified High = 29838083;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 50804;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 640313856;
+            Last Modified High = 29810889;
+        }
+    }
+
+    Wave
+    {
+        Name = Music_GameLoop;
+        File = wav\GameLoop.wav;
+        Build Settings Last Modified Low = 31250400;
+        Build Settings Last Modified High = 29838090;
+        Comment = Music by Nathan Grigg;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 5771264;
+            Loop Region Offset = 854016;
+            Loop Region Length = 4917244;
+            File Type = 1;
+            Last Modified Low = 3812163172;
+            Last Modified High = 29838089;
+        }
+    }
+
+    Wave
+    {
+        Name = Music_GameOver;
+        File = wav\GameOver.wav;
+        Build Settings Last Modified Low = 2342989056;
+        Build Settings Last Modified High = 29838092;
+        Comment = Music by Scott Selfon;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 551936;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2373340358;
+            Last Modified High = 29838091;
+        }
+    }
+}
+
+</WaveBank>
+</Sections>

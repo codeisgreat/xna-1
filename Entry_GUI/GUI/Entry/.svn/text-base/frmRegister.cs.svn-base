@@ -1,0 +1,68 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Main_XNA_Game
+{
+    public partial class frmRegister : Form
+    {
+        public delegate void WriteInMain(String cmd);
+        public event WriteInMain WriteInHome;
+
+        public frmRegister()
+        {
+            InitializeComponent();
+        }
+
+
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            if (!txtPassword_2.Text.ToString().Equals(txtPassword.Text.ToString()))
+            {
+                MessageBox.Show("Error: Passwords dont match");
+                return;
+            }
+            
+            try
+            {
+                User myUser = new User();
+                myUser.Email = txtEmail.Text;
+                myUser.IsApproved = false;
+                myUser.Password = txtPassword.Text;
+                myUser.UserName = txtUsername.Text;
+
+                RegList myRegRequestList = new RegList();
+                XMLHelper<RegList> myXML = new XMLHelper<RegList>("Data");
+                myXML.Load(ref myRegRequestList);
+                myRegRequestList.AddItem(myUser);
+                myXML.Save(myRegRequestList);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Occurred: " + ex.Message.ToString());
+                return;
+            }
+            
+            if (WriteInHome != null)
+                WriteInHome("Registration Request has been Sent");
+            this.Dispose();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtEmail.Text = "";
+            txtPassword.Text = "";
+            txtPassword_2.Text = "";
+            txtUsername.Text = "";
+            this.Dispose();
+
+        }
+
+    }
+}
